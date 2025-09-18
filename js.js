@@ -22,7 +22,7 @@ function activateCounter(){
     if(`${minutes}`.length === 1){
         minutes = `0${minutes}`
     }
-    if(`${days}`.length === 1){
+    if(`${seconds}`.length === 1){
         seconds = `0${seconds}`
     }
     
