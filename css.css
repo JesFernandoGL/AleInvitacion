@@ -1,0 +1,225 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #1A1A8D;
+}
+
+body{
+    background-image: url('./assets/fondo-morado-flores.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+main{    
+    padding: 20px;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.HeaderContent{
+    color: #1A1A8D;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 700;
+}
+
+.HeaderTitle{
+    font-family: "Amaranth", sans-serif;
+    font-size: 98px;
+    line-height: 80px;
+}
+
+.HeaderSubtitle{
+    font-family: "Amaranth", sans-serif;
+    font-size: 56px;
+    line-height: 48px;
+    font-style: italic;
+    margin-top: 24px;
+}
+
+.GlassComp{
+    border: 1px solid #CCBEFF;
+    background-color: rgba(236, 229, 255, 45%);
+    box-shadow: 0 4px 8px 0 rgb(182, 151, 245, 25%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 16px;
+    margin-top: 34px;    
+}
+
+.CardTitle{
+    font-family: "Amaranth", sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #1A1A8D;
+}
+
+.DateInv-FechaWrapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #1A1A8D;
+}
+
+.DateInv-Counter-Title{
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.DateInv-Counter{
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.DateInv-CounterWrapp{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+    font-size: 26px;
+    line-height: 34px;
+}
+
+.DateInv-Counter-Num{
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.DateInv-Counter-Text{
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.PlaceInv-Sec{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.InvImgContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.InvImgContent-Img{
+    width: 35px;
+}
+
+.IconHora{
+    width: 30px;
+}
+
+.InvImgContent-Header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.InvImgContent-Content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.InvImgContent-Text{
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.InvImgContet-Btn{
+    background-color: #CD78F4;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    max-width: 114px;
+    text-align: center;
+}
+
+.DrinkInv-Text{
+    text-align: center;
+}
+
+.Timeline-Section{
+    align-self: flex-start;    
+    margin-top: 8px;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.Timeline-Section::-webkit-scrollbar {
+    display: none;
+}
+
+.TimelineWrapp{
+    width: fit-content;
+}
+
+.Timeline-PhotoWrapp{
+    display: flex;
+    width: fit-content;
+}
+
+.Timeline-Memory{
+    padding: 0 6px;
+}
+
+.Timeline-Memory:first-child{
+    padding-left: 0;
+}
+
+.Timeline-MemoryImg{
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+}
+
+.Timeline-MemoryLine{
+    height: 4px;
+    background-color: #1A1A8D;
+    margin-top: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Timeline-MemoryText-Wrapp{
+    margin-top: 12px;
+    display: flex;
+}
+
+
+.Timeline-MemoryText{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    width: 95px;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+
+.AssitenciaInv-Btn{
+    max-width: none;
+}
