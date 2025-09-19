@@ -7,7 +7,7 @@ const timerInterval = setInterval(function() {
 
 
 function activateCounter(){
-    const diffTime = new Date('2025-12-04T00:00:00') - new Date();
+    const diffTime = new Date('2025-12-06T00:00:00') - new Date();
     let days = Math.floor(diffTime / (1000 * 60 * 60 * 24));
     let hours = Math.floor((diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((diffTime % (1000 * 60 * 60)) / (1000 * 60));

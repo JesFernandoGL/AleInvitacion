@@ -7,28 +7,58 @@
 }
 
 body{
-    background-image: url('./assets/fondo-morado-flores.jpg');
-    background-size: cover;
-    background-repeat: repeat-y;
-    background-position: center;
+    background-color: #f1e4ff;    
+}
+
+.FontSemibold{
+    font-weight: 600;
 }
 
 main{    
-    padding: 20px;
     max-width: 540px;
     margin: 0 auto;
 }
 
+.HeaderInv{    
+    position: sticky;
+    top: 0;
+}
+
+.HeaderInv-Wrapp{
+    position: relative;
+}
+
+.HeaderInv-Img{
+    width: 100%;
+    max-height: 340px;
+    object-fit: cover;
+    object-position: top;
+    vertical-align: middle;
+}
+
+.HeaderOvelay{
+    background-image: linear-gradient(0deg, #17096880 0%, #17096854 14%, #1709683b 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .HeaderContent{
-    color: #1A1A8D;
     font-family: "Amaranth", sans-serif;
     font-weight: 700;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    text-align: right;
 }
 
 .HeaderTitle{
     font-family: "Amaranth", sans-serif;
     font-size: 98px;
-    line-height: 80px;
+    line-height: 80px;    
+    color: #fff;
 }
 
 .HeaderSubtitle{
@@ -37,6 +67,7 @@ main{
     line-height: 48px;
     font-style: italic;
     margin-top: 24px;
+    color: #fff;
 }
 
 .GlassComp{
@@ -46,7 +77,34 @@ main{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     padding: 16px;
-    margin-top: 34px;    
+    margin-top: 34px;
+    border-radius: 4px;    
+}
+
+.MainContetInv{
+    padding: 20px 20px 50px 20px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    margin-top: -20px;  
+}
+
+.MainContetInv-BG{
+    background-image: url(./assets/fondo-morado-flores.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+}
+
+.DateInv-Sec{
+    margin-top: 0;
 }
 
 .CardTitle{
@@ -62,10 +120,11 @@ main{
     align-items: center;
     justify-content: center;
     gap: 24px;
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 38px;
+    line-height: 50px;
     font-weight: 700;
     color: #1A1A8D;
+    margin-top: 4px;
 }
 
 .DateInv-Counter-Title{
@@ -159,6 +218,7 @@ main{
 
 .DrinkInv-Text{
     text-align: center;
+    width: 100%;
 }
 
 .Timeline-Section{
