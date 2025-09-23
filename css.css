@@ -66,7 +66,7 @@ main{
     font-size: 56px;
     line-height: 48px;
     font-style: italic;
-    margin-top: 24px;
+    margin-top: 6px;
     color: #fff;
 }
 
@@ -223,7 +223,7 @@ main{
 
 .Timeline-Section{
     align-self: flex-start;    
-    margin-top: 8px;
+    padding: 12px 0;
     overflow-x: scroll;
     width: 100%;
 }
@@ -234,15 +234,28 @@ main{
 
 .TimelineWrapp{
     width: fit-content;
+    padding-bottom: 6px;
 }
 
 .Timeline-PhotoWrapp{
     display: flex;
-    width: fit-content;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 302px;
+    gap: 16px;
 }
 
 .Timeline-Memory{
-    padding: 0 6px;
+    flex: 0 0 calc((100% / 3) - 12px);    
+    position: relative;
+}
+
+.Timeline-Memory:nth-of-type(3n+1) {
+    transform: translateX(12px);
+}
+
+.Timeline-Memory:nth-of-type(3n+3) {
+    transform: translateX(40px);
 }
 
 .Timeline-Memory:first-child{
@@ -250,36 +263,118 @@ main{
 }
 
 .Timeline-MemoryImg{
-    width: 84px;
-    height: 84px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    vertical-align: middle;
 }
 
-.Timeline-MemoryLine{
-    height: 4px;
-    background-color: #1A1A8D;
-    margin-top: 12px;
-    margin-left: 40px;
-    margin-right: 40px;
+.Timeline-Memory:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgb(211 178 247 / 0%) 0%, rgb(255 255 255 / 0%) 60%, rgb(219 201 255) 70%, #fdf8ff 100%);;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgb(148 123 199 / 75%);
 }
-
-.Timeline-MemoryText-Wrapp{
-    margin-top: 12px;
-    display: flex;
-}
-
-
-.Timeline-MemoryText{
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 700;
-    letter-spacing: -0.4px;
-    width: 95px;
-    flex: 0 0 auto;
-    text-align: center;
-}
-
 
 .AssitenciaInv-Btn{
     max-width: none;
+}
+
+
+.ModalGalleryWrap{
+    height: 90dvh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(49 37 118 / 80%);
+    border-top: 5px solid #060120;
+    border-radius: 16px 16px 0 0;
+    backdrop-filter: blur(12px);
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transform: translateY(120%);
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 40%;
+}
+
+.ModalGalleryWrap.ModalActive{
+    transform: translateY(0);
+    opacity: 100%;
+}
+
+.ModalGallery-CloseBtn{
+    border-radius: 50px;
+    border: 1px solid #4F469C;
+    background-color: #CECBFA;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4F469C;
+    font-weight: 700;
+    z-index: 10;
+}
+
+.ModalGallery-WaveTop{
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.ModalGallery-WaveBottom{
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.ModalGallery-Carrusel{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.ModalGallery-Carrusel::-webkit-scrollbar{
+    display: none;
+}
+
+.ModalGallery-Carrusel img{
+    width: calc(100% - 80px);
+    scroll-snap-align: center;
+    box-shadow: 0 4px 8px 0 rgb(26 8 61 / 85%);
+    border-radius: 8px;
+    vertical-align: middle;
+    max-height: 600px;
+}
+
+.ModalGallery-Carrusel img:first-of-type{
+    margin-left: 40px;
+}
+
+.ModalGallery-Carrusel img:last-of-type{
+    margin-right: 40px;
 }

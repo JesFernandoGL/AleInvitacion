@@ -1,4 +1,5 @@
 activateCounter();
+eventsPhotos();
 
 const timerInterval = setInterval(function() {
     activateCounter();
@@ -33,5 +34,28 @@ function activateCounter(){
 
     if (diffTime <= 0) {
         clearInterval(timerInterval);
+    }
+}
+
+function eventsPhotos(){
+    $('.Timeline-Memory').click(function(){
+        openModal(this);
+    });
+
+    $('.ModalGallery-CloseBtn').click(function(){
+        closeModal();
+    });
+
+    function openModal(el){
+        const index = $(el).attr('data-id');
+        const leftScroll = $(`.ModalGallery-Carrusel img:nth-of-type(${index})`)[0].offsetLeft;
+        $('.ModalGallery-Carrusel').scrollLeft(leftScroll);
+        setTimeout(function(){
+            $('.ModalGalleryWrap').addClass('ModalActive');
+        }, 200);
+    }
+
+    function closeModal(){
+        $('.ModalGalleryWrap').removeClass('ModalActive');
     }
 }
