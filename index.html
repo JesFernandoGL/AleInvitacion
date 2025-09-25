@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <main>
@@ -15,7 +16,7 @@
             <div class="HeaderInv-Wrapp">
                 <img class="HeaderInv-Img" src="./assets/ale-azul.jpg">
                 <div class="HeaderOvelay"></div>
-                <div class="HeaderContent">
+                <div class="HeaderContent animate__animated">
                     <p class="HeaderTitle">Ale</p>
                     <p class="HeaderSubtitle">30 años</p>
                 </div>
@@ -25,12 +26,12 @@
             <div class="MainContetInv-BG"></div>        
             <section class="DateInv-Sec GlassComp">
                 <div class="DateInv-Header">
-                    <p class="DateInv-Title CardTitle">Aparta el día</p>
+                    <p class="DateInv-Title CardTitle">Festeja conmigo</p>
                     <div class="DateInv-FechaWrapp">
                         <p class="DateInv-Day">06 Diciembre</p>
                     </div>
                 </div>
-                <div class="DateInv-Counter">
+                <div class="DateInv-Counter animate__animated">
                     <p class="DateInv-Counter-Title">Faltan:</p>
                     <div class="DateInv-CounterWrapp">
                         <div class="DateInv-CounterElem">
@@ -55,7 +56,7 @@
             <section class="PlaceInv-Sec GlassComp">
                 <div class="InvImgContent">
                     <div class="InvImgContent-Header">
-                        <img class="InvImgContent-Img" src="./assets/icon-ubicacion.png">
+                        <img class="InvImgContent-Img animate__animated" src="./assets/ubicacion-mapa-ilustracion.png">
                         <p class="InvImgContent-Title CardTitle">Ubicación</p>
                     </div>
                     <div class="InvImgContent-Content">
@@ -68,11 +69,11 @@
                 </div>
                 <div class="InvImgContent">
                     <div class="InvImgContent-Header">
-                        <img class="InvImgContent-Img IconHora" src="./assets/icon-hora.png">
+                        <img class="InvImgContent-Img animate__animated" src="./assets/reloj-ilustracion.png">
                         <p class="InvImgContent-Title CardTitle">Hora</p>
                     </div>
                     <div class="InvImgContent-Content">
-                        <p class="InvImgContent-Text">La recepeción será a las 16:00 hrs</p>
+                        <p class="InvImgContent-Text">Puedes llegar a partir de las 16:00 hrs</p>
                         <a class="InvImgContet-Btn" href="https://calendar.app.google/WyoD2XWmSMbAYo599" target="_blank">Agendar</a>
                     </div>
                 </div>            
@@ -80,19 +81,21 @@
             <section class="DrinkInv-Sec GlassComp">
                 <div class="InvImgContent">
                     <div class="InvImgContent-Header">
-                        <img class="InvImgContent-Img" src="./assets/icon-copas.png">
-                        <p class="InvImgContent-Title CardTitle">Bebida</p>
+                        <img class="InvImgContent-Img animate__animated" src="./assets/tequilero-ilustracion.png">
+                        <p class="InvImgContent-Title CardTitle">¡Obviamente habrá bebida para festejar!</p>
                     </div>
                     <div class="InvImgContent-Content">
-                        <p class="InvImgContent-Text DrinkInv-Text">Puedes traer tu bebida favorita 
-                            para brindar conmigo</p>
+                        <p class="InvImgContent-Text DrinkInv-Text">Pero si tienes alguna preferencia en especial, ¡siéntete libre de traer tu favorita!</p>
                     </div>
                 </div>           
             </section>
             <section class="TimelineInv-Sec GlassComp">
                 <div class="InvImgContent">
                     <div class="InvImgContent-Header">
-                        <p class="InvImgContent-Title CardTitle">Como he crecido</p>
+                        <div class="InvImgContent-HeaderTitles">
+                            <p class="InvImgContent-Title CardTitle">De ayer a hoy</p>
+                            <p class="CardSubtitle">Mi viaje a los 30</p>
+                        </div>
                     </div>
                     <div class="Timeline-Section">
                         <div class="TimelineWrapp">
@@ -220,16 +223,16 @@
                             </div>  
                         </div>                      
                     </div>
+                    <a class="InvImgContet-Btn BtnGallery">Ver galería</a>
                 </div>                          
             </section>
             <section class="AssitenciaInv-Sec GlassComp">
                 <div class="InvImgContent">
                     <div class="InvImgContent-Header">
-                        <img class="InvImgContent-Img" src="./assets/icon-copas.png">
-                        <p class="InvImgContent-Title CardTitle">Asistencia</p>
+                        <p class="InvImgContent-Title CardTitle">Confirma tu asistencia</p>
                     </div>
                     <div class="InvImgContent-Content">
-                        <p class="InvImgContent-Text DrinkInv-Text">Eres una persona muy importante para mi por lo que me gustaría que confirmaras tu asistencia</p>
+                        <p class="InvImgContent-Text DrinkInv-Text">¡Eres una persona muy importante para mí! Y me haría muy feliz contar con tu presencia.</p>
                     </div>
                     <a class="InvImgContet-Btn AssitenciaInv-Btn" href="https://calendar.app.google/WyoD2XWmSMbAYo599" target="_blank">Confirmar</a>
                 </div>           
@@ -287,7 +290,9 @@
         
     </main>
     
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="./js.js"></script>
 </body>
 </html>

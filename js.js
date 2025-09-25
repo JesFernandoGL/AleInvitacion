@@ -1,5 +1,6 @@
 activateCounter();
 eventsPhotos();
+animationsInit();
 
 const timerInterval = setInterval(function() {
     activateCounter();
@@ -39,15 +40,19 @@ function activateCounter(){
 
 function eventsPhotos(){
     $('.Timeline-Memory').click(function(){
-        openModal(this);
+        const index = $(this).attr('data-id');
+        openModal(index);
     });
+
+    $('.BtnGallery').click(function(){
+        openModal(1);
+    })
 
     $('.ModalGallery-CloseBtn').click(function(){
         closeModal();
     });
 
-    function openModal(el){
-        const index = $(el).attr('data-id');
+    function openModal(index){        
         const leftScroll = $(`.ModalGallery-Carrusel img:nth-of-type(${index})`)[0].offsetLeft;
         $('.ModalGallery-Carrusel').scrollLeft(leftScroll);
         setTimeout(function(){
@@ -58,4 +63,41 @@ function eventsPhotos(){
     function closeModal(){
         $('.ModalGalleryWrap').removeClass('ModalActive');
     }
+}
+
+
+
+function animationsInit(){
+    
+      title = new WOW(
+        {
+        boxClass:     'HeaderContent',      // default
+        animateClass: 'animate__fadeInUp', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+      }
+      )
+      counter = new WOW(
+        {
+        boxClass:     'DateInv-Counter',      // default
+        animateClass: 'animate__fadeInUp', // default
+        offset:       100,          // default
+        mobile:       true,       // default
+        live:         true        // default
+      }
+      )
+      imgs = new WOW(
+        {
+        boxClass:     'InvImgContent-Img',      // default
+        animateClass: 'animate__fadeInUp', // default
+        offset:       100,          // default
+        mobile:       true,       // default
+        live:         true        // default
+      }
+      ) 
+
+      title.init();
+      counter.init();
+      imgs.init();
 }
