@@ -23,6 +23,62 @@ main{
     margin: 0 auto;
 }
 
+.BtnMusicWrapp{
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 2;
+}
+
+.BtnMusicRep{
+    background-color: #7f41d7;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px 0 rgb(25 23 173 / 40%);   
+}
+
+.BtnMusicWrapp-ControlNext{
+    background-color: #7f41d7;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px 0 rgb(25 23 173 / 40%);
+}
+
+.BtnMusicPlay{
+    width: 40px;
+}
+
+.BtnMusicPause{
+    display: none;
+    width: 28px;
+}
+
+.BtnMusicWrapp-ControlNext{
+    display: none;
+}
+.BtnMusicNext{
+    width: 28px;
+}
+
+.BtnMusicWrapp.MusicActive .BtnMusicPause{
+    display: block;
+}
+.BtnMusicWrapp.MusicActive .BtnMusicPlay{
+    display: none;
+}
+
+.BtnMusicWrapp.MusicActive .BtnMusicWrapp-ControlNext{
+    display: flex;
+}
+
 .HeaderInv{    
     position: sticky;
     top: 0;
@@ -91,7 +147,8 @@ main{
     background-color: #fff;
     border-radius: 20px 20px 0 0;
     overflow: hidden;
-    margin-top: -20px;  
+    margin-top: -20px;
+    box-shadow: 0 -4px 8px 0 rgb(7 6 78 / 50%);  
 }
 
 .MainContetInv-BG{
@@ -315,6 +372,7 @@ main{
     transform: translateY(120%);
     transition: transform 1s ease, opacity 1s ease;
     opacity: 40%;
+    z-index: 10;
 }
 
 .ModalGalleryWrap.ModalActive{
@@ -387,4 +445,16 @@ main{
 
 .ModalGallery-Carrusel img:last-of-type{
     margin-right: 40px;
+}
+
+/*Day Invite*/
+.DayInvite .DateInv-CounterWrapp,
+.NextDayInvite .DateInv-CounterWrapp{
+    display: none;
+}
+
+.DayInvite .DateInv-Counter-Title{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
 }

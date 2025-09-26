@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ale 30 años | Te invito a festejar conmigo</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <title>Ale 30 años | Festeja conmigo mi cumpleaños</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -23,7 +24,30 @@
             </div>
         </header>
         <div class="MainContetInv">
-            <div class="MainContetInv-BG"></div>        
+            <div class="MainContetInv-BG"></div>
+            <div class="BtnMusicWrapp">
+                <div class="BtnMusicRep">
+                    <img class="BtnMusicPlay" src="./assets/sonido.png">
+                    <img class="BtnMusicPause" src="./assets/boton-de-pausa.png">
+                </div>
+                <div class="BtnMusicWrapp-ControlWrapp">
+                    <div class="BtnMusicWrapp-ControlNext">
+                        <img class="BtnMusicNext" src="./assets/next-control.png" alt="">
+                    </div>                            
+                </div>
+                <audio class="AudioMusic ActiveMusicTrack" data-id="1" preload="none">
+                    <source src="./assets/birthday.mp3" type="audio/mpeg">
+                </audio>
+                <audio class="AudioMusic" data-id="2" preload="none">
+                    <source src="./assets/chimba-de-vida.mp3" type="audio/mpeg">
+                </audio>
+                <audio class="AudioMusic" data-id="3" preload="none">
+                    <source src="./assets/on-my-way.mp3" type="audio/mpeg">
+                </audio>
+                <audio class="AudioMusic" data-id="4" preload="none">
+                    <source src="./assets/lokera.mp3" type="audio/mpeg">
+                </audio>
+            </div>
             <section class="DateInv-Sec GlassComp">
                 <div class="DateInv-Header">
                     <p class="DateInv-Title CardTitle">Festeja conmigo</p>
@@ -73,7 +97,7 @@
                         <p class="InvImgContent-Title CardTitle">Hora</p>
                     </div>
                     <div class="InvImgContent-Content">
-                        <p class="InvImgContent-Text">Puedes llegar a partir de las 16:00 hrs</p>
+                        <p class="InvImgContent-Text">Puedes llegar a partir de las <span class="FontSemibold">16:00 hrs</span></p>
                         <a class="InvImgContet-Btn" href="https://calendar.app.google/WyoD2XWmSMbAYo599" target="_blank">Agendar</a>
                     </div>
                 </div>            
