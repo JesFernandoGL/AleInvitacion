@@ -1,9 +1,12 @@
+$( document ).ready(function() {
+    
+
 activateCounter();
 eventsPhotos();
 animationsInit();
 musicPlayer();
 
-let randomMusic = Math.floor(Math.random() * 3)
+let randomMusic = Math.floor(Math.random() * 2);
 
 let timerInterval = '';
 
@@ -159,3 +162,6 @@ function musicPlayer(){
     })
     
 }
+
+
+});
