@@ -6,7 +6,7 @@ eventsPhotos();
 animationsInit();
 musicPlayer();
 
-let randomMusic = Math.floor(Math.random() * 2);
+let randomMusic = Math.floor(Math.random() * 3);
 
 let timerInterval = '';
 
